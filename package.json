@@ -1,0 +1,51 @@
+{
+  "yellow-belt-minesweeper-in-nodejs": "dojo-nodejs-jumpstart",
+  "version": "1.0.0",
+  "Yellow Belt Minesweeper in NodeJS repository": "Jumpstart for coding NodeJS projects for an XP Dojo",
+  "homepage": "https://github.com/gotreasa/dojo-nodejs-jumpstart#readme",
+  "bugs": {
+    "url": "https://github.com/gotreasa/dojo-nodejs-jumpstart/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gotreasa/dojo-nodejs-jumpstart.git"
+  },
+  "license": "ISC",
+  "author": "Gearoid O'Treasaigh",
+  "main": "src/Dummy.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint:fix": "eslint --cache --fix",
+    "lint:verify": "eslint .",
+    "prepare": "husky install",
+    "prettier:fix": "prettier --write",
+    "prettier:verify": "prettier --check \"*.{css,feature,js,json,rb,md,sh,yaml,yml}\"",
+    "test": "jest",
+    "test:unit:watch": "npm test -- --watch"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.2",
+    "@types/eslint-config-prettier": "^6.11.0",
+    "@types/lint-staged": "^13.2.0",
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "jest": "^29.6.4",
+    "jest-config": "^29.6.4",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "sort-package-json": "^2.5.1",
+    "typesync": "^0.11.1"
+  },
+  "engines": {
+    "node": ">=18.17.1",
+    "npm": ">=9.5.1"
+  }
+}
