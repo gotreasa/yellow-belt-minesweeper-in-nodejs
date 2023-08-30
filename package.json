@@ -1,7 +1,5 @@
 {
-  "yellow-belt-minesweeper-in-nodejs": "dojo-nodejs-jumpstart",
   "version": "1.0.0",
-  "Yellow Belt Minesweeper in NodeJS repository": "Jumpstart for coding NodeJS projects for an XP Dojo",
   "homepage": "https://github.com/gotreasa/dojo-nodejs-jumpstart#readme",
   "bugs": {
     "url": "https://github.com/gotreasa/dojo-nodejs-jumpstart/issues"
@@ -23,7 +21,7 @@
     "prettier:fix": "prettier --write",
     "prettier:verify": "prettier --check \"*.{css,feature,js,json,rb,md,sh,yaml,yml}\"",
     "test": "jest",
-    "test:unit:watch": "npm test -- --watch"
+    "test:unit:watch": "npm test -- --watchAll"
   },
   "devDependencies": {
     "@types/eslint": "^8.44.2",
@@ -47,5 +45,7 @@
   "engines": {
     "node": ">=18.17.1",
     "npm": ">=9.5.1"
-  }
+  },
+  "Yellow Belt Minesweeper in NodeJS repository": "Jumpstart for coding NodeJS projects for an XP Dojo",
+  "yellow-belt-minesweeper-in-nodejs": "dojo-nodejs-jumpstart"
 }
