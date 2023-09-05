@@ -13,7 +13,8 @@
 
 ## 🍅 Pomodoro 2
 
-- 🚧 update the domain
-- ⚠ add backlog items
+- ✅ update the domain
+- ✅ add backlog items
+- ⚠ Add support for additional sizes
 - ⚠ add mines to the board
 - ⚠ create game with mines board
