@@ -1,5 +1,7 @@
 const outsideBoard = (minePositions) => {
-  return minePositions.some((minePosition) => minePosition[0] < 0);
+  return minePositions.some(
+    (minePosition) => minePosition[0] < 0 || minePosition[1] < 0,
+  );
 };
 
 class Board {
