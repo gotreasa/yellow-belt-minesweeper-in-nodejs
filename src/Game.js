@@ -1,8 +1,13 @@
 const { Board } = require('./Board');
 
+const SIZE = {
+  beginner: [9, 9],
+  intermediate: [16, 16],
+};
+
 class Game {
-  constructor() {
-    this.userBoard = new Board(9, 9);
+  constructor(size) {
+    this.userBoard = new Board(SIZE[size][0], SIZE[size][1]);
   }
 }
 

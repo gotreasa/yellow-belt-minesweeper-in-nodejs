@@ -1,108 +1,14 @@
 const { Game } = require('../src/Game');
+const { empty9x9Board, empty16x16Board } = require('./fixtures/emptyBoards');
 
 describe('Initialise the Game', () => {
-  test('should set up a beginner user board with the mines', () => {
+  test('should set up a beginner user board', () => {
     const game = new Game('beginner');
-    expect(game.userBoard.squares).toEqual([
-      [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-      ],
-      [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-      ],
-      [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-      ],
-      [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-      ],
-      [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-      ],
-      [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-      ],
-      [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-      ],
-      [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-      ],
-      [
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-      ],
-    ]);
+    expect(game.userBoard.squares).toEqual(empty9x9Board);
+  });
+
+  test('should set up an intermediate user board', () => {
+    const game = new Game('intermediate');
+    expect(game.userBoard.squares).toEqual(empty16x16Board);
   });
 });
