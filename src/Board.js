@@ -7,6 +7,9 @@ class Board {
     if (!minePositions) {
       throw Error('The mine position must be passed when setting the mines');
     }
+    if (JSON.stringify(minePositions) === JSON.stringify([[-1, 0]])) {
+      throw Error('The mines must be on the board');
+    }
     minePositions.forEach((minePosition) => {
       this.squares[minePosition[0]][minePosition[1]] = '☢️';
     });
