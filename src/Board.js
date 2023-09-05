@@ -1,6 +1,9 @@
-const outsideBoard = (minePositions) => {
+const isOutsideBoard = (minePositions, squares) => {
   return minePositions.some(
-    (minePosition) => minePosition[0] < 0 || minePosition[1] < 0,
+    (minePosition) =>
+      minePosition[0] < 0 ||
+      minePosition[1] < 0 ||
+      minePosition[0] > squares[0].length,
   );
 };
 
@@ -13,7 +16,7 @@ class Board {
     if (!minePositions) {
       throw Error('The mine position must be passed when setting the mines');
     }
-    if (outsideBoard(minePositions)) {
+    if (isOutsideBoard(minePositions, this.squares)) {
       throw Error('The mines must be on the board');
     }
     minePositions.forEach((minePosition) => {
