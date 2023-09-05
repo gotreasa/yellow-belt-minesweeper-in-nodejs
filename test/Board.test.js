@@ -30,4 +30,30 @@ describe('Initialise the Board for 32 rows and 40 columns', () => {
   test('should have an 32 rows', () => {
     expect(board.squares).toHaveLength(32);
   });
+
+  test('should have 40 columns in first row', () => {
+    expect(board.squares[0]).toHaveLength(40);
+  });
+});
+
+describe('Setup the mines on the board', () => {
+  test('should set the mines in position 0,0 and 4,4', () => {
+    const board = new Board(10, 10);
+    board.setMines([
+      [0, 0],
+      [4, 4],
+    ]);
+    expect(board).toEqual([
+      ['☢️', null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, '☢️', null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+    ]);
+  });
 });
