@@ -3,7 +3,8 @@ const isOutsideBoard = (minePositions, squares) => {
     (minePosition) =>
       minePosition[0] < 0 ||
       minePosition[1] < 0 ||
-      minePosition[0] > squares[0].length,
+      minePosition[0] > squares.length ||
+      minePosition[1] > squares[0].length,
   );
 };
 
