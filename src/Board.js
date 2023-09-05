@@ -4,6 +4,9 @@ class Board {
   }
 
   setMines(minePositions) {
+    if (!minePositions) {
+      throw Error('The mine position must be passed when setting the mines');
+    }
     minePositions.forEach((minePosition) => {
       this.squares[minePosition[0]][minePosition[1]] = '☢️';
     });

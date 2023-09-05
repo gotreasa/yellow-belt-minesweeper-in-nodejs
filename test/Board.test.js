@@ -309,4 +309,18 @@ describe('Setup the mines on the board', () => {
       ],
     ]);
   });
+
+  test('should throw an error when the mine positions are not passed', () => {
+    const board = new Board(2, 2);
+    expect(() => board.setMines()).toThrow(
+      'The mine position must be passed when setting the mines',
+    );
+  });
+
+  // test('should throw an error when the mine position is -1,0 for board of 2 square', () => {
+  //   const board = new Board(2, 2);
+  //   expect(() => board.setMines([[-1, 0]])).toThrow(
+  //     'The mines must be on the board',
+  //   );
+  // });
 });
