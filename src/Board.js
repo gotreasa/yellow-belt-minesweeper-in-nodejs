@@ -1,3 +1,7 @@
+const outsideBoard = (minePositions) => {
+  return minePositions.some((minePosition) => minePosition[0] < 0);
+};
+
 class Board {
   constructor(nuberOfColumns, numberOfRows) {
     this.squares = [...Array(numberOfRows)].map(() => Array(nuberOfColumns));
@@ -7,7 +11,7 @@ class Board {
     if (!minePositions) {
       throw Error('The mine position must be passed when setting the mines');
     }
-    if (JSON.stringify(minePositions) === JSON.stringify([[-1, 0]])) {
+    if (outsideBoard(minePositions)) {
       throw Error('The mines must be on the board');
     }
     minePositions.forEach((minePosition) => {

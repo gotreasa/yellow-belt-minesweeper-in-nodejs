@@ -323,4 +323,11 @@ describe('Setup the mines on the board', () => {
       'The mines must be on the board',
     );
   });
+
+  test('should throw an error when the mine position is -2,0 for board of 2 square', () => {
+    const board = new Board(2, 2);
+    expect(() => board.setMines([[-2, 0]])).toThrow(
+      'The mines must be on the board',
+    );
+  });
 });
