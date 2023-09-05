@@ -21,8 +21,14 @@
 
 ## 🍅 Pomodoro 3
 
-- 🚧 add mines to the board
+- ✅ add mines to the board
 - ⚠ create game with mines board
+- ⚠ UAT 4 Create the game with the user board as well
+- ⚠ UAT 5 User can open a square to reveal a bomb
+
+## 🍅 Pomodoro 4
+
+- 🚧 create game with mines board
 - ⚠ UAT 4 Create the game with the user board as well
 - ⚠ UAT 5 User can open a square to reveal a bomb
 
