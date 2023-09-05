@@ -1,6 +1,6 @@
 class Board {
-  constructor() {
-    this.squares = [...Array(11)].map(() => Array(10));
+  constructor(_, rows) {
+    this.squares = [...Array(rows)].map(() => Array(10));
   }
 }
 
