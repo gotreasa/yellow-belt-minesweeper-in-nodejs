@@ -15,6 +15,10 @@ class Game {
   setMines(minePositions) {
     this.minesBoard.setMines(minePositions);
   }
+
+  open() {
+    this.userBoard.squares[1][1] = '💥';
+  }
 }
 
 module.exports = {

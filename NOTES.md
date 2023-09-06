@@ -34,8 +34,8 @@
 
 ## 🍅 Pomodoro 5
 
-- 🚧 create game with mines board
-- ⚠ UAT 5 User can open a square to reveal a bomb
+- ✅ create game with mines board
+- 🚧 UAT 5 User can open a square to reveal a bomb
 
 ## TechDebt
 
