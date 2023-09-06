@@ -80,7 +80,7 @@ When a square is uncovered it can be:
 
 - an exploding mine that ends the game
 - show a number denoting the number of mines around that square
-  - if there are no mines around the square, then further squares are uncovered until squares with bombs around them are shown
+  - if there are no mines around the square, then further squares are uncovered until squares with mines around them are shown
 
 The game ends when:
 

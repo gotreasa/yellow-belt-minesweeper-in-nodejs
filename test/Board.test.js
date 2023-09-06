@@ -112,3 +112,16 @@ describe('Setup the mines on the board', () => {
     );
   });
 });
+
+describe('Calculate number of neighbouring mines', () => {
+  let board;
+
+  beforeEach(() => {
+    board = new Board(5, 5);
+    board.setMines([[0, 0], [1, 1], [2, 1], [3, 2]]);
+  });
+
+  test('should retrieve 2 as the number of mines surrounding position 0,1', () => {
+    expect(board.getNumberOfSurroundingMines(0, 1)).toBe(2);
+  });
+});

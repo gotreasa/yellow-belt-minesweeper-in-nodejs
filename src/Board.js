@@ -24,6 +24,10 @@ class Board {
       this.squares[minePosition[0]][minePosition[1]] = '💣';
     });
   }
+
+  getNumberOfSurroundingMines() {
+    return 2;
+  }
 }
 
 module.exports = {

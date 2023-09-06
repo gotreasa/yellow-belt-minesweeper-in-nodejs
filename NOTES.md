@@ -24,24 +24,24 @@
 - ✅ add mines to the board
 - ⚠ create game with mines board
 - ⚠ UAT 4 Create the game with the user board as well
-- ⚠ UAT 5 User can open a square to reveal a bomb
+- ⚠ UAT 5 User can open a square to reveal a mine
 
 ## 🍅 Pomodoro 4
 
 - ✅ UAT 4 Create the game with the user board as well
 - 🚧 create game with mines board
-- ⚠ UAT 5 User can open a square to reveal a bomb
+- ⚠ UAT 5 User can open a square to reveal a mine
 
 ## 🍅 Pomodoro 5
 
 - ✅ create game with mines board
-- 🚧 UAT 5 User can open a square to reveal a bomb
+- 🚧 UAT 5 User can open a square to reveal a mine
 
 ## 🍅 Pomodoro 6
 
-- ✅ UAT 5 User can open a square to reveal a bomb
-- 🚧 UAT 6 User can open a square to reveal the number of bombs surrounding the square
-- ⚠ UAT 7 User can flag a square as a bomb
+- ✅ UAT 5 User can open a square to reveal a mine
+- 🚧 UAT 6 User can open a square to reveal the number of mines surrounding the square
+- ⚠ UAT 7 User can flag a square as a mine
 
 ## TechDebt
 
