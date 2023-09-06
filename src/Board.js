@@ -21,7 +21,7 @@ class Board {
       throw Error('The mines must be on the board');
     }
     minePositions.forEach((minePosition) => {
-      this.squares[minePosition[0]][minePosition[1]] = '☢️';
+      this.squares[minePosition[0]][minePosition[1]] = '💣';
     });
   }
 }

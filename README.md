@@ -60,7 +60,7 @@ So you should return "?" as the result.
 ## Domain
 
 We have a board of dimensions m \* n squares  
-We have x number of mines where x is 1 or more  
+We have x number of mines where x is 1 or more shown as 💣  
 We have a number of flags ☢️ which is also x to match the number of mines  
 If a mine is exposed, it is shown as 💥
 We start the game with an empty board visible to the user and a board with the mines set
