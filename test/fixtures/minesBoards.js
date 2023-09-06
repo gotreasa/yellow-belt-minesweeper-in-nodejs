@@ -249,7 +249,7 @@ const THREE_MINES_IN_10_X_10_BOARD = [
   ],
 ];
 
-const scenario1For9x9Board = [
+const SCENARIO_1_FOR_9_X_9_BOARD = [
   [
     '💣', // 0,0
     undefined,
@@ -646,6 +646,6 @@ module.exports = {
   TWO_MINES_IN_10_X_10_BOARD,
   TWO_MINES_IN_2_X_2_BOARD,
   THREE_MINES_IN_10_X_10_BOARD,
-  scenario1For9x9Board,
+  SCENARIO_1_FOR_9_X_9_BOARD,
   SCENARIO_2_16_X_16_BOARD,
 };

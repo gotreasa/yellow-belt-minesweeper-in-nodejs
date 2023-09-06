@@ -1,28 +1,28 @@
 const { Game } = require('../src/Game');
 const {
-  empty9x9Board,
-  empty16x16Board,
-  empty30x16Board,
+  EMPTY_9_X_9_BOARD,
+  EMPTY_16_X_16_BOARD,
+  EMPTY_30_X_16_BOARD,
 } = require('./fixtures/emptyBoards');
 const {
-  scenario1For9x9Board,
+  SCENARIO_1_FOR_9_X_9_BOARD,
   SCENARIO_2_16_X_16_BOARD,
 } = require('./fixtures/minesBoards');
 
 describe('Initialise the Game', () => {
   test('should set up a beginner user board', () => {
     const game = new Game('beginner');
-    expect(game.userBoard.squares).toEqual(empty9x9Board);
+    expect(game.userBoard.squares).toEqual(EMPTY_9_X_9_BOARD);
   });
 
   test('should set up an intermediate user board', () => {
     const game = new Game('intermediate');
-    expect(game.userBoard.squares).toEqual(empty16x16Board);
+    expect(game.userBoard.squares).toEqual(EMPTY_16_X_16_BOARD);
   });
 
   test('should set up an expert user board', () => {
     const game = new Game('expert');
-    expect(game.userBoard.squares).toEqual(empty30x16Board);
+    expect(game.userBoard.squares).toEqual(EMPTY_30_X_16_BOARD);
   });
 
   test('should setup a mine beginner board with 10 mines', () => {
@@ -39,7 +39,7 @@ describe('Initialise the Game', () => {
       [8, 1],
       [8, 8],
     ]);
-    expect(game.minesBoard.squares).toEqual(scenario1For9x9Board);
+    expect(game.minesBoard.squares).toEqual(SCENARIO_1_FOR_9_X_9_BOARD);
   });
 
   test('should setup a mine intermediate board with 40 mines', () => {

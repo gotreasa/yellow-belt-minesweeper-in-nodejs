@@ -1,4 +1,4 @@
-const empty9x9Board = [
+const EMPTY_9_X_9_BOARD = [
   [
     undefined,
     undefined,
@@ -100,7 +100,7 @@ const empty9x9Board = [
   ],
 ];
 
-const empty16x16Board = [
+const EMPTY_16_X_16_BOARD = [
   [
     undefined,
     undefined,
@@ -391,7 +391,7 @@ const empty16x16Board = [
   ],
 ];
 
-const empty30x16Board = [
+const EMPTY_30_X_16_BOARD = [
   [
     undefined,
     undefined,
@@ -934,7 +934,7 @@ const empty30x16Board = [
   ],
 ];
 module.exports = {
-  empty9x9Board,
-  empty16x16Board,
-  empty30x16Board,
+  EMPTY_9_X_9_BOARD,
+  EMPTY_16_X_16_BOARD,
+  EMPTY_30_X_16_BOARD,
 };
