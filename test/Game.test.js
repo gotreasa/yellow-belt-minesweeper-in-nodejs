@@ -129,7 +129,7 @@ describe('Play the game', () => {
     expect(game.userBoard.squares).toEqual(SCENARIO_4_FOR_9_X_9_BOARD);
   });
 
-  test('should reveal there are two mines surround position 0,1', () => {
+  test('should reveal there are two mines surrounding position 0,1', () => {
     const game = new Game('beginner');
     game.setMines([
       [0, 0],
@@ -145,5 +145,23 @@ describe('Play the game', () => {
     ]);
     game.open(0, 1);
     expect(game.userBoard.squares[0][1]).toBe(2);
+  });
+
+  test('should reveal there is one mine surrounding position 0,2', () => {
+    const game = new Game('beginner');
+    game.setMines([
+      [0, 0],
+      [1, 1],
+      [2, 1],
+      [3, 2],
+      [4, 5],
+      [5, 6],
+      [6, 5],
+      [7, 7],
+      [8, 1],
+      [8, 8],
+    ]);
+    game.open(0, 2);
+    expect(game.userBoard.squares[0][2]).toBe(1);
   });
 });

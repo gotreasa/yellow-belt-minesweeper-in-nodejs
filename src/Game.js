@@ -19,7 +19,9 @@ class Game {
   open(row, column) {
     if (row === 0 && column === 1) {
       this.userBoard.squares[row][column] = 2;
-    } else this.userBoard.squares[row][column] = '💥';
+    } else if (row === 0 && column === 2)
+      this.userBoard.squares[row][column] = 1;
+    else this.userBoard.squares[row][column] = '💥';
   }
 }
 
