@@ -351,9 +351,301 @@ const scenario1For9x9Board = [
   ],
 ];
 
+const SCENARIO_2_16_X_16_BOARD = [
+  [
+    '💣', // 0,0
+    '💣', // 0,1
+    '💣', // 0,2
+    '💣', // 0,3
+    '💣', // 0,4
+    '💣', // 0,5
+    '💣', // 0,6
+    '💣', // 0,7
+    '💣', // 0,8
+    '💣', // 0,9
+    '💣', // 0,10
+    '💣', // 0,11
+    '💣', // 0,12
+    '💣', // 0,13
+    '💣', // 0,14
+    '💣', // 0,15
+  ],
+  [
+    '💣', // 1,0
+    '💣', // 1,1
+    '💣', // 1,2
+    '💣', // 1,3
+    '💣', // 1,4
+    '💣', // 1,5
+    '💣', // 1,6
+    '💣', // 1,7
+    '💣', // 1,8
+    '💣', // 1,9
+    '💣', // 1,10
+    '💣', // 1,11
+    '💣', // 1,12
+    '💣', // 1,13
+    '💣', // 1,14
+    '💣', // 1,15
+  ],
+  [
+    undefined,
+    '💣', // 2,1
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    '💣', // 3,2
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    '💣', // 4,5
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    '💣', // 5,6
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    '💣', // 6,5
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    '💣', // 7,7
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    '💣', // 8,1
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    '💣', // 8,8
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+  [
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ],
+];
+
 module.exports = {
   TWO_MINES_IN_10_X_10_BOARD,
   TWO_MINES_IN_2_X_2_BOARD,
   THREE_MINES_IN_10_X_10_BOARD,
   scenario1For9x9Board,
+  SCENARIO_2_16_X_16_BOARD,
 };
