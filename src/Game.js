@@ -16,8 +16,8 @@ class Game {
     this.minesBoard.setMines(minePositions);
   }
 
-  open() {
-    this.userBoard.squares[1][1] = '💥';
+  open(row, column) {
+    this.userBoard.squares[row][column] = '💥';
   }
 }
 

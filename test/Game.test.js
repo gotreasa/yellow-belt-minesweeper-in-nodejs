@@ -8,6 +8,7 @@ const {
   SCENARIO_1_FOR_9_X_9_BOARD,
   SCENARIO_2_16_X_16_BOARD,
   SCENARIO_3_FOR_9_X_9_BOARD,
+  SCENARIO_4_FOR_9_X_9_BOARD,
 } = require('./fixtures/minesBoards');
 
 describe('Initialise the Game', () => {
@@ -108,5 +109,23 @@ describe('Play the game', () => {
     ]);
     game.open(1, 1);
     expect(game.userBoard.squares).toEqual(SCENARIO_3_FOR_9_X_9_BOARD);
+  });
+
+  test('should reveal a bomb when a bomb is uncovered in position 2,1', () => {
+    const game = new Game('beginner');
+    game.setMines([
+      [0, 0],
+      [1, 1],
+      [2, 1],
+      [3, 2],
+      [4, 5],
+      [5, 6],
+      [6, 5],
+      [7, 7],
+      [8, 1],
+      [8, 8],
+    ]);
+    game.open(2, 1);
+    expect(game.userBoard.squares).toEqual(SCENARIO_4_FOR_9_X_9_BOARD);
   });
 });

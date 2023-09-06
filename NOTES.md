@@ -37,6 +37,12 @@
 - ✅ create game with mines board
 - 🚧 UAT 5 User can open a square to reveal a bomb
 
+## 🍅 Pomodoro 6
+
+- ✅ UAT 5 User can open a square to reveal a bomb
+- 🚧 UAT 6 User can open a square to reveal the number of bombs surrounding the square
+- ⚠ UAT 7 User can flag a square as a bomb
+
 ## TechDebt
 
 - Handle bad sizes for the board
